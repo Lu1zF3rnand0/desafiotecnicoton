@@ -1,0 +1,3 @@
+SELECT DISTINCT TU.ID, TU.EMAIL FROM ton_users TU
+JOIN public.ton_transactions TT ON TU.id = TT.user_id 
+WHERE TT.STATUS = 'PROCESSING'
